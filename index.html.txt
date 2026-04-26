@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Teachable Machine AI</title>
+
+  <!-- TensorFlow.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+
+  <!-- Teachable Machine Image Library -->
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    #webcam-container {
+      margin-top: 20px;
+    }
+
+    #label-container {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>AI Image Classifier</h1>
+  <p>Teachable Machine Model</p>
+
+  <button onclick="init()">Start Camera</button>
+  <button onclick="predict()">Predict</button>
+
+  <div id="webcam-container"></div>
+  <div id="label-container"></div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
